@@ -1,4 +1,4 @@
-class User {
+export default class User {
     constructor(nome, email, nascimento, role, ativo = true) {
         this.nome = nome
         this.email = email
@@ -11,7 +11,3 @@ class User {
         return `${this.nome}, ${this.email}`
     }
 }
-
-const newUser = new User ('john', 'j@s.com', '1993-23-05')
-console.log(newUser)
-console.log(newUser.exibirInfos()) 
